@@ -1,0 +1,19 @@
+{
+  "name": "node-js-api-craft",
+  "version": "1.0.0",
+  "description": "NodeJS and ExpressJS Boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Veri5ied/node-js-api-craft.git"
+  },
+  "author": "Alvin Uchenna",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Veri5ied/node-js-api-craft/issues"
+  },
+  "homepage": "https://github.com/Veri5ied/node-js-api-craft#readme"
+}
