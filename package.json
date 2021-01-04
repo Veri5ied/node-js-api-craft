@@ -17,8 +17,16 @@
   },
   "homepage": "https://github.com/Veri5ied/node-js-api-craft#readme",
   "dependencies": {
+    "bcrypt": "^5.0.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
     "cuid": "^2.1.8",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "lodash": "^4.17.20"
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.20",
+    "mongoose": "^5.11.10",
+    "morgan": "^1.10.0",
+    "validator": "^13.5.2"
   }
 }
