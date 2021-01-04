@@ -28,5 +28,8 @@
     "mongoose": "^5.11.10",
     "morgan": "^1.10.0",
     "validator": "^13.5.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
   }
 }
