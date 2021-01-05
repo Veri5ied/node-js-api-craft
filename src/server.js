@@ -2,6 +2,7 @@ import express from "express";
 import cors from "cors";
 import { json, urlencoded } from "body-parser";
 import morgan from "morgan";
+import { connect } from "./utils/db";
 import sampleRouter from "./resources/sample/sample.router";
 
 const app = express();
@@ -17,6 +18,7 @@ app.use(morgan("dev"));
 app.use("/api/v1/sample", sampleRouter);
 
 export const start = async () => {
+  await connect();
   app.listen(PORT, () => {
     console.log(`App is running on port ${PORT}`);
   });
