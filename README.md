@@ -3,8 +3,9 @@
 # Getting Started
 
 - Clone the Responsitory: https://github.com/Veri5ied/node-js-api-craft.git
-- Run <b>npm i or install</b> to install dependenciesy
+- Run <b>npm i or install</b> to install dependencies
 - Setup <b>.env.example</b> for mongodb connection
+- <b>npm start</b> to start server
 
 # Technologies
 
