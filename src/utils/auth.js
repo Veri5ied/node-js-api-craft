@@ -1,5 +1,6 @@
 import jwt from "jsonwebtoken";
 import { jwtSecrets, jwtExpiration } from "../config/secrets";
+import { User } from "../resources/user/user.model"
 
 export const newToken = (user) => {
   return jwt.sign({ id: user.id }, jwtSecrets, { expiresIn: jwtExpiration });
