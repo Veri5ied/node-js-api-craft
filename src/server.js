@@ -1,11 +1,13 @@
-import express from "express";
-import { json, urlencoded } from "body-parser";
-import morgan from "morgan";
-import config from "./config";
+import express, { json, urlencoded } from "express";
 import cors from "cors";
-import { connect } from "./utils/db";
+import morgan from "morgan";
+import dotenv from "dotenv";
+import { connect } from "./config/db";
 
-export const app = express();
+dotenv.config();
+
+const app = express();
+const PORT = process.env.PORT || 4200;
 
 app.disable("x-powered-by");
 
@@ -17,10 +19,10 @@ app.use(morgan("dev"));
 export const start = async () => {
   try {
     await connect();
-    app.listen(config.port, () => {
-      console.log(`REST API on http://localhost:${config.port}/api`);
+    app.listen(PORT, () => {
+      console.log(`App is running on port ${PORT}`);
     });
-  } catch (e) {
-    console.error(e);
+  } catch (error) {
+    console.error(error);
   }
 };
